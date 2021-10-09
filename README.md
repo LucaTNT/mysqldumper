@@ -4,6 +4,7 @@ The purpose of this is to schedule and run mysqldump against the specified serve
 Configuration happens through environment variables:
 
 * `CRON_MINUTE`, `CRON_HOUR`, `CRON_DOM`, `CRON_MONTH` and `CRON_DOW` control the cronjob.
+* `TZ` sets the time zone (e.g. Europe/Rome).
 * `DB_SERVER` is the MySQL/MariaDB server host.
 * `DB_USER` is the MySQL/MariaDB username.
 * `DB_PASS` is the MySQL/MariaDB password.
