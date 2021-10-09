@@ -13,3 +13,6 @@ Configuration happens through environment variables:
 * `POST_COMMANDS_SUCCESS` contains commands to be executed after a successful backup.
 * `POST_COMMANDS_FAILURE` contains commands to be executed after a failed backup.
 * `POST_COMMANDS_EXIT` contains commands to be executed after the backup process, regardless of the result.
+
+# Docker secrets
+`DB_SERVER`, `DB_USER`, `DB_PASS`, `DB_NAME`, `OUT_PATH` can be replaced with `DB_SERVER_FILE`, `DB_USER_FILE`, `DB_PASS_FILE`, `DB_NAME_FILE`, `OUT_PATH_FILE`: the contents of such files will be used as the value. This allows you to use Docker secrets.
