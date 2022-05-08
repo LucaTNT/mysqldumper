@@ -42,6 +42,8 @@ function run_exit_commands {
 
 trap run_exit_commands EXIT
 
+run_commands "${PRE_COMMANDS:-}"
+
 file_env DB_SERVER
 file_env DB_USER
 file_env DB_PASS

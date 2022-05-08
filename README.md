@@ -11,6 +11,7 @@ Configuration happens through environment variables:
 * `DB_NAME` is the MySQL/MariaDB database name.
 * `OUT_PATH` is the full output path for the dump. Usually on a volume/mount. This path must be writable by UID 1001, otherwise you'll need to edit the Dockerfile.
 * `COMPRESS` if set to a literal "true", enables gzip compression of the dump file.
+* `PRE_COMMANDS` contains commands to be executed before starting a backup.
 * `POST_COMMANDS_SUCCESS` contains commands to be executed after a successful backup.
 * `POST_COMMANDS_FAILURE` contains commands to be executed after a failed backup.
 * `POST_COMMANDS_EXIT` contains commands to be executed after the backup process, regardless of the result.
